@@ -8,14 +8,15 @@
 (defpackage #:boten-anna-system
     (:use #:cl #:asdf))
 
+(in-package #:boten-anna-system)
+
 (defsystem boten-anna
     :name "boten-anna"
     :author "Adrià Garriga-Alonso"
     :version "0.0"
     :licence "MIT"
     :description "Yet Annaother IRC Boten."
-    :depends-on (:cl-irc)
+    :depends-on (:cl-irc :cl+ssl)
     :properties ((#:author-email . "adria@monkingme.com"))
     :components ((:file "package")
                  (:file "main")))
-

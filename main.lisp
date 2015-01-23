@@ -99,6 +99,7 @@
     (update-connections connections servers)))
 
 (defun boten-anna ()
-  (reload-conf))
+  (reload-conf)
+  (-> (loop) (eval) (print) (read)))
 
 (boten-anna)
